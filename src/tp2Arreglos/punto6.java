@@ -1,4 +1,4 @@
-package Tp.Arreglos2;
+package tp2Arreglos;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

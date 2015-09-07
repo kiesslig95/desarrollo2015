@@ -1,4 +1,4 @@
-package tp1;
+package tp1String;
 
 import utiles.TecladoIn;
 
