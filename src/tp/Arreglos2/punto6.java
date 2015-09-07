@@ -11,18 +11,20 @@ package Tp.Arreglos2;
  */
 public class punto6 {
 
-    public static void selectionSort(String[] args) {
-        int[] a = {5, 8, 9, 12, 34};
-        int i, j, min;
-        j = 0;
-        for (i = 0; j <= a.length - 2; i++) {
+    public static void main(String[] args) {
+        int[] a = {5,12,9,34,8};
+        int i, j, min,tmp;
+        for (i = 0; i <= a.length -1 ; i++) {
             min = i;
             for (j = i + 1; j <= a.length - 1; j++) {
                 if (a[j] < a[min]) {
                     min = j;
                 }
             }
-            
+            tmp = a[min];
+            a[min] = a[i];
+            a[i] = tmp;
+            System.out.println(a[i]);
         }
     }
 
