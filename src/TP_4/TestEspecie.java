@@ -5,7 +5,7 @@
  */
 package TP_4;
 
-import clases.Especie;
+import TP_4.Especie;
 import utiles.TecladoIn;
 
 /**
