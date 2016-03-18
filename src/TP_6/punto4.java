@@ -3,13 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tp6;
+package TP_6;
 
 /**
  *
  * @author german
  */
 public class punto4 {
+    /*reciba como datos
+de entrada dos arreglos de enteros ordenados en forma creciente, de dimensiones n y m
+respectivamente, y obtenga un tercer arreglo, también ordenado en forma creciente, de
+dimensión n+m
+    */
 
     public static int[] suma(int[] a, int[] b) {
         int[] c;

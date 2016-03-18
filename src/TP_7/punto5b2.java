@@ -13,29 +13,25 @@ import utiles.TecladoIn;
  */
 public class punto5b2 {
 
-    public static int max(int n, int m) {
-
+    public static int max(int m) {
+        int n;
+        System.out.println("ingrese un numero entero positivo");
+        n = TecladoIn.readInt();
         if (!(n == 0)) {
             if (n > m) {
                 m = n;
-                System.out.println("ingrese un numero entero positivo");
-                n = TecladoIn.readInt();
-                m=max(n, m);
+                m = max(m);
             } else {
-                System.out.println("ingrese un numero entero positivo");
-                n = TecladoIn.readInt();
-                m=max(n, m);
+                m = max(m);
             }
         }
         return m;
     }
+
     public static void main(String[] args) {
         // almacena el maximo numero entero infresado
-        int m,n;
-        m=0;
-        System.out.println("ingrese un numero  entero positivo");
-        n=TecladoIn.readInt();
-        System.out.println("el maximo es" + max(n,m));
+        int m=0;
+        System.out.println("el maximo es" + max(m));
     }
 
 }
